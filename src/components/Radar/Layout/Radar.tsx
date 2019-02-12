@@ -1,14 +1,6 @@
 import * as React from "react";
 import { RadarChart, PolarGrid, PolarAngleAxis, Radar, Tooltip } from 'recharts';
-
-interface IGrade {
-    rank: string,
-    value: number
-}
-
-interface IGrades {
-    grades: IGrade[]
-}
+import IGrades from '../Data/RadarProps';
 
 const MyRadar: React.SFC<IGrades> = ({grades}) => {
     return (
