@@ -4,7 +4,9 @@ import logo from './logo.svg';
 import MyRadar from './components/Radar/Layout/Radar';
 import MyGraph from './components/Graph/Layout/Graph';
 import MyVerticalGraph from './components/VerticalGraph/Layout/VerticalGraph';
+import MyCircleGraph from './components/CircleGraph/Layout/CircleGraph';
 
+// Test Data
 const dataRadar = [
   { rank: '国語', value: 120 },
   { rank: '数学', value: 85 },
@@ -30,6 +32,12 @@ const dataEvent = [
   { name: '英語', point: 1520 },
 ]
 
+const dataGendar = [
+  { name: '男性', amount: 532 },
+  { name: '女性', amount: 232 },
+  { name: '中性', amount: 232 }
+];
+
 class App extends React.Component {
   public render() {
     return (
@@ -44,6 +52,7 @@ class App extends React.Component {
         <MyRadar grades={dataRadar} />
         <MyGraph sales={dataGraph} />
         <MyVerticalGraph testGrades={dataEvent} />
+        <MyCircleGraph genders={dataGendar} />
       </div>
     );
   }
