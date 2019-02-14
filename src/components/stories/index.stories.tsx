@@ -1,10 +1,10 @@
 import * as React from 'react'
-import { storiesOf } from '@storybook/react'
-import MyRadar from '../Radar/Layout/Radar';
-import MyGraph from '../Graph/Layout/Graph';
-import MyVerticalGraph from '../VerticalGraph/Layout/VerticalGraph';
-import {withKnobs} from '@storybook/addon-knobs';
-import {withInfo} from '@storybook/addon-info';
+import { storiesOf } from '@storybook/react';
+import MyRadar from '../../components/Radar/Layout/Radar';
+import MyGraph from '../../components/Graph/Layout/Graph';
+import MyVerticalGraph from '../../components/VerticalGraph/Layout/VerticalGraph';
+import { withKnobs } from '@storybook/addon-knobs';
+import { withInfo } from '@storybook/addon-info';
 
 const dataRadar = [
   { rank: '国語', value: 120 },

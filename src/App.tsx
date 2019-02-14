@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-//import logo from './logo.svg';
+// import logo from './logo.svg';
 import MyRadar from './components/Radar/Layout/Radar';
 import MyGraph from './components/Graph/Layout/Graph';
 import MyVerticalGraph from './components/VerticalGraph/Layout/VerticalGraph';
