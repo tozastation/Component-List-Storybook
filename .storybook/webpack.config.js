@@ -20,6 +20,13 @@ module.exports = (baseConfig, env, defaultConfig) => {
     test: /\.(ts|tsx)$/,
     loader: require.resolve('awesome-typescript-loader'),
   })
+
+  defaultConfig.module.rules.push({
+    test: /\.stories\.tsx?$/,
+    loaders: [require.resolve('@storybook/addon-storysource/loader')],
+    enforce: 'pre',
+  });
+
   defaultConfig.plugins.push(new TSDocgenPlugin())
   defaultConfig.resolve.extensions.push('.ts', '.tsx')
   return defaultConfig
