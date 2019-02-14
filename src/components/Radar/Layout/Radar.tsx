@@ -2,7 +2,7 @@ import * as React from "react";
 import { RadarChart, PolarGrid, PolarAngleAxis, Radar, Tooltip } from 'recharts';
 import IGrades from '../Data/RadarProps';
 
-const MyRadar: React.SFC<IGrades> = ({grades}) => {
+const MyRadar: React.SFC<IGrades> = ({grades}: IGrades) => {
     return (
         <RadarChart // レーダーチャートのサイズや位置、データを指定
           height={400} // レーダーチャートの全体の高さを指定

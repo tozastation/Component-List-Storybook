@@ -2,7 +2,7 @@ import * as React from "react";
 import { Tooltip, ComposedChart, XAxis, YAxis, CartesianGrid, Legend, Area, Bar } from 'recharts';
 import ISales from '../Data/GraphProps';
 
-const MyGraph: React.SFC<ISales> = ({sales}) => {
+const MyGraph: React.SFC<ISales> = ({sales}: ISales) => {
     return (
         <ComposedChart // グラフ全体のサイズや位置、データを指定。場合によってmarginで上下左右の位置を指定する必要あり。
             width={600}  // グラフ全体の幅を指定

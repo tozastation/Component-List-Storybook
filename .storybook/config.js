@@ -1,16 +1,19 @@
-// import { configure } from '@kadira/storybook';
+import { configure } from '@storybook/react';
+
+// automatically import all files ending in *.stories.js
+const req = require.context('../src/components/stories/', true, /.stories.tsx$/);
+function loadStories() {
+   req.keys().forEach(filename => req(filename));
+ }
+
+//  configure(loadStories, module);
+
+// StoryBookロードに必要な設定
+// import { configure } from '@storybook/react'
 
 // function loadStories() {
-//   require('../stories');
+//   // カタログの設置ディレクトリを指定する。
+//   require('../src/components/stories')
 // }
 
-// configure(loadStories, module);
-import React from 'react';
-import { configure } from "@storybook/react";
-const req = require.context("../src/components/stories", true, /\.(js|ts|tsx)$/);
-
-function loadStories() {
-    req.keys().forEach((filename) => req(filename));
-}
-
-configure(loadStories, module);
+// configure(loadStories, module)

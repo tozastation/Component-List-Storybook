@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/storybook__addon-actions": "^3.4.1",
-    "@types/storybook__react": "^4.0.0",
+    "@types/storybook__react": "^4.0.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-scripts-ts": "3.1.0"
@@ -14,13 +14,20 @@
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 7000 -c .storybook",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@kadira/storybook": "^2.21.0",
+    "@babel/core": "^7.2.2",
     "@storybook/addon-actions": "^4.1.11",
+    "@storybook/addon-info": "^4.1.11",
+    "@storybook/addon-knobs": "^4.1.11",
+    "@storybook/addon-links": "^4.1.11",
+    "@storybook/addon-notes": "^4.1.11",
+    "@storybook/addon-storyshots": "^4.1.11",
     "@storybook/addon-storysource": "^4.1.11",
+    "@storybook/addon-viewport": "^4.1.11",
+    "@storybook/addons": "^4.1.11",
     "@storybook/react": "^4.1.11",
     "@types/jest": "^24.0.0",
     "@types/node": "^11.9.0",
@@ -28,12 +35,16 @@
     "@types/react-dom": "^16.8.0",
     "@types/recharts": "^1.1.10",
     "@types/storybook__addon-actions": "^3.0.3",
+    "@types/storybook__addon-info": "^3.4.4",
+    "@types/storybook__addon-knobs": "^4.0.1",
     "@types/storybook__addon-links": "^3.3.1",
     "@types/storybook__addon-notes": "^3.3.1",
     "@types/storybook__addon-storyshots": "^3.4.2",
     "@types/storybook__react": "^3.0.7",
     "awesome-typescript-loader": "^5.2.1",
-    "recharts": "^1.4.2",
+    "babel-loader": "^8.0.5",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "recharts": "^1.4.3",
     "typescript": "^3.3.3"
   }
 }

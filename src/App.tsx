@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import MyRadar from './components/Radar/Layout/Radar';
 import MyGraph from './components/Graph/Layout/Graph';
 import MyVerticalGraph from './components/VerticalGraph/Layout/VerticalGraph';
@@ -43,7 +43,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          {/* <img src={null} className="App-logo" alt="logo" /> */}
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">

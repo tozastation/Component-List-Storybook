@@ -8,7 +8,7 @@ const COLORS = [
   '#da50a2',
 ];
 
-const MyCircleGraph: React.SFC<IGenders> = ({genders}) => {
+const MyCircleGraph: React.SFC<IGenders> = ({genders}: IGenders) => {
     return (
       <ResponsiveContainer>
         <PieChart // 円グラフのhoverの設定などをする
